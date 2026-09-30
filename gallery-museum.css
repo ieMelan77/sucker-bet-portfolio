@@ -1,0 +1,52 @@
+/* Gallery / museum showcase. Scoped to preserve the other systems. */
+#economy{background:#0F0606;border:2px solid #9E7E46;padding:28px;margin:28px 0 44px;box-shadow:inset 0 2px #E5C37822,0 6px #080404}
+#economy .section-head{padding-bottom:22px;border-bottom:1px solid #D4AF3740}
+#economy .section-head h2,#economy h3{color:#FFF}
+#economy .section-aside,#economy .figure-label,#economy .small-note,#economy .muted{color:#E5DBC5;line-height:1.7}
+#economy .section-aside{font-size:.9rem}
+#economy .figure-label{font-size:11px;padding-top:17px}
+#economy .screen{border:4px solid #D4AF37;border-right-color:#8B612C;border-bottom-color:#6F431F;outline:2px solid #E5C378;outline-offset:3px;box-shadow:inset 0 0 0 2px #1A0906,7px 8px 0 #080404;margin:5px}
+#economy .funds-panel{background:linear-gradient(135deg,#241611,#180B0A);border:2px solid #A98850;box-shadow:inset 0 2px #E5C37844,0 5px #080404;padding:24px}
+#economy .funds-panel>.label{font:10px/1.7 Pixel,monospace;color:#FFD700;letter-spacing:.025em}
+#economy .funds-panel h3{font-size:24px;line-height:1.25;margin-top:19px}
+#economy .economic-flow{gap:20px;margin-top:25px}
+#economy .economic-flow .flow-node{background:#12291C;border:2px solid #B89A59;padding:15px 12px;box-shadow:inset 0 2px #E5C37822,0 4px #070C08}
+#economy .economic-flow .flow-node b{color:#FFF;font-size:15px}
+#economy .economic-flow .flow-node small{color:#E5DBC5;font-size:13px;line-height:1.7}
+#economy .economic-flow .flow-node:not(:last-child)::after{content:'▸';right:-19px;top:42%;background:transparent;color:#FFD700;font:20px/1 monospace;text-shadow:0 0 8px #FFD70070;animation:gallery-flow 1.8s ease-in-out infinite}
+#economy .economic-flow .flow-node:nth-child(2)::after{animation-delay:.3s}
+#economy .funds-panel .formula{position:relative;background:#3A0E0E;border:2px solid #AA7139;padding:17px 15px;margin:25px 0 18px;box-shadow:inset 0 2px #E5C37833,3px 4px #080404;color:#FFE596;font:13px/1.8 Consolas,monospace}
+#economy .funds-panel .muted{font-size:.9rem}
+#economy .art-card{position:relative;isolation:isolate;background:#1C0A0A;border:2px solid #D4AF37;padding:22px 18px 18px;box-shadow:inset 0 2px #E5C37833,0 5px #080404;display:flex;flex-direction:column;transition:transform .22s,border-color .22s,box-shadow .22s;min-width:0}
+#economy .art-card::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(110deg,transparent 40%,#E5C37826 50%,transparent 60%);background-size:300% 100%;background-position:100% 0;opacity:0}
+#economy .museum-frame{position:relative;width:112px;height:140px;margin:10px auto 23px;display:grid;place-items:center;background:#120A09;border:6px solid #AD8041;border-top-color:#E5C378;border-left-color:#D0A459;border-right-color:#6B4323;border-bottom-color:#754B25;outline:2px solid #3D2415;box-shadow:inset 0 0 0 3px #442619,inset 0 0 18px #000,5px 6px 0 #080404}
+#economy .museum-frame img{display:block;width:74px;height:104px;object-fit:contain;margin:0;filter:none;image-rendering:pixelated}
+#economy .exhibit-number{position:absolute;top:12px;left:14px;color:#E5C378;font:9px Pixel,monospace;letter-spacing:.04em}
+#economy .art-card h3{font-size:18px;line-height:1.3;font-weight:700;margin:0 0 15px}
+#economy .art-card dl{margin:0 0 20px}
+#economy .art-card dl>div{display:flex;align-items:baseline;gap:0;border:0;padding:7px 0}
+#economy .art-card dt{display:flex;align-items:baseline;flex:1;gap:8px;color:#E5DBC5;font-size:11px;line-height:1.5;text-transform:uppercase}
+#economy .art-card dt::after{content:'';flex:1;min-width:6px;border-bottom:2px dotted #C3A97066}
+#economy .art-card dd{padding-left:8px;color:#FFD700;font:12px/1.6 Pixel,monospace}
+#economy .effect-badge{position:relative;margin:0;margin-top:auto;background:#E5C378;color:#32180B;border:1px solid #FFE49F;padding:10px 12px;font:11px/1.6 Arial,sans-serif;font-weight:700;box-shadow:3px 3px #080404}
+#economy .effect-badge::before{content:'';position:absolute;top:-5px;left:14px;width:8px;height:8px;background:inherit;transform:rotate(45deg);border-left:1px solid #FFE49F;border-top:1px solid #FFE49F}
+#economy .art-card[data-artwork="dubious"] .effect-badge{background:#6A1916;color:#FFE4C5;border-color:#C57548}
+#economy .panel:not(.funds-panel){background:#1C1010;border:1px solid #AA8955}
+#economy .panel:not(.funds-panel) p{color:#E5DBC5;font-size:.9rem;line-height:1.75}
+#economy .paper-panel{background:#24130F;color:#E5DBC5;border:2px solid #AA8955;box-shadow:0 4px #080404}
+#economy .paper-panel p{color:#E5DBC5;font-size:.9rem;line-height:1.75}
+#economy .paper-panel>.label{color:#FFD700}
+#economy .paper-panel .formula{color:#FFE596;background:#3A0E0E;border:1px solid #AA7139;padding:13px}
+@media(hover:hover) and (pointer:fine){
+ #economy .art-card:hover{transform:translateY(-4px);border-color:#FFD700;box-shadow:inset 0 2px #FFE89955,0 9px #080404,0 0 20px #FFD70026}
+ #economy .art-card:hover::before{animation:gallery-shine .7s ease-out both}
+ #economy .art-card:hover .price-value{display:inline-block;animation:gallery-price .45s ease-out}
+}
+@keyframes gallery-shine{0%{opacity:0;background-position:100% 0}15%{opacity:1}100%{opacity:0;background-position:0 0}}
+@keyframes gallery-price{0%,100%{transform:translateY(0)}45%{transform:translateY(-3px)}}
+@keyframes gallery-flow{0%,100%{opacity:.5;translate:0 0}50%{opacity:1;translate:3px 0}}
+@media(max-width:767px){#economy{padding:16px}#economy .funds-panel{padding:19px}#economy .economic-flow{gap:22px}#economy .economic-flow .flow-node:not(:last-child)::after{content:'▾';right:calc(50% - 6px);top:100%;transform:none;animation-name:gallery-flow-down}#economy .art-card{grid-column:span 12;padding:24px}#economy .art-card dt{font-size:12px}#economy .art-card h3{font-size:20px}#economy .art-card dd{font-size:14px}}
+@media(min-width:520px) and (max-width:767px){#economy .art-card{grid-column:span 6;padding:18px}}
+@keyframes gallery-flow-down{0%,100%{opacity:.5;translate:0 0}50%{opacity:1;translate:0 3px}}
+@media(prefers-reduced-motion:reduce){#economy .art-card,#economy .art-card::before,#economy .price-value,#economy .flow-node::after{animation:none!important;transition:none!important}#economy .art-card:hover{transform:none}}
+.motion-off #economy .art-card:hover{transform:none}

@@ -1,0 +1,40 @@
+/* Final type hierarchy; source gameplay imagery remains unchanged. */
+/* Surface-specific contrast wins over inherited light/dark theme rules. */
+body.editorial main #interface #play.play-banner summary{color:#FFFFFF!important}
+body.editorial main #interface #play.play-banner .ready-badge{color:#D4AF37!important;opacity:1;animation:none!important}
+body.editorial main #interface #play.play-banner :is(.small-note,.build-launch>span){color:#E5DBC5!important}
+body.editorial main #economy .art-card.hierarchy-anchor dl dd,
+body.editorial main #economy .art-card.hierarchy-anchor dl dd *{color:#020202!important;text-shadow:none!important}
+body.editorial main #overview .loop-card .step{color:#D4AF37!important}
+body.editorial main #economy .art-card:not(.hierarchy-anchor) dd{color:#FFF!important}
+body.editorial main #economy .art-card.hierarchy-anchor .exhibit-number{position:static;display:block;margin-bottom:12px}
+body.editorial main #balance .panel .small-note{color:#8A7D70!important}
+body.editorial{background:#020202;color:#E5DBC5}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.panel,.art-card,.loop-card){background:#120A0A!important;border:1px solid #D4AF3740!important;position:relative;isolation:isolate;transition:transform .3s,border-color .3s!important}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(h2,h3){color:#FFF!important;font-weight:700}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(p,small,.muted,.loop-card small){color:#E5DBC5!important;line-height:1.65}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.label,.step,dt,.exhibit-number,.section-index){color:#D4AF37!important;font-family:Pixel,monospace!important;font-size:10px!important;line-height:1.7;letter-spacing:.025em!important}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(dd,.stat,.diagnostic-number){color:#FFF!important;font-weight:700}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.small-note,.section-aside,.figure-label,.terminal-caption,.ide-status){color:#8A7D70!important;font-size:12px!important;line-height:1.65}
+body.editorial .editorial-kicker,body.editorial .editorial-hero-bottom,body.editorial .topnav a{color:#8A7D70}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) .hierarchy-anchor{background:#FFEFCC!important;border-color:#FFEFCC!important;transform:translateY(-8px)!important;padding-top:48px!important;overflow:visible}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) .hierarchy-anchor :is(h3,p,small,dt,dd,.label,.stat,.diagnostic-number,.exhibit-number,.small-note){color:#020202!important;text-shadow:none!important}
+body.editorial main #overview .loop-step:nth-child(4) .loop-card{background:#120A0A!important;border-color:#D4AF3740!important}
+body.editorial main #overview .loop-step:nth-child(4) .loop-card :is(b,small){color:#E5DBC5!important}
+body.editorial main #overview .loop-step:nth-child(2) .loop-card{border:2px solid #D4AF37!important}
+.key-stamp{position:absolute;right:14px;top:10px;transform:rotate(-6deg);background:#E00419;color:#FFEFCC;padding:6px 9px;font:9px/1.6 Pixel,monospace;z-index:5;box-shadow:3px 3px #020202;pointer-events:none}
+.hierarchy-sweep{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:3}.hierarchy-sweep::after{content:'';position:absolute;inset:-10% -40%;background:linear-gradient(110deg,transparent 44%,#D4AF3729 50%,transparent 56%);transform:translateX(-100%)}
+@media(hover:hover){body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.panel,.art-card,.loop-card):hover{transform:translateY(-3px)!important;border-color:#D4AF37!important}body.editorial main :is(#overview,#table,#economy,#balance,#interface) .hierarchy-anchor:hover{transform:translateY(-10px)!important}.panel:hover>.hierarchy-sweep::after,.art-card:hover>.hierarchy-sweep::after,.loop-card:hover>.hierarchy-sweep::after{animation:hierarchy-shine .8s ease-out}.editorial :is(.label,.step,dt):hover{text-shadow:0 0 8px #D4AF3777!important}}
+@keyframes hierarchy-shine{to{transform:translateX(100%)}}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.unified-console,.dev-ide,.ev-code,.formula,.live-formula){background:#020202!important;color:#E5DBC5!important}
+body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.cs-keyword,.syntax-loss){color:#FF79C6!important}body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.cs-var,.syntax-number){color:#8BE9FD!important}body.editorial main :is(#overview,#table,#economy,#balance,#interface) :is(.cs-fn,.syntax-win,.live-formula output){color:#8FE3A5!important}
+body.editorial .console-dots i,body.editorial .window-pixels i{background:#E00419!important}body.editorial .console-dots i:nth-child(2),body.editorial .window-pixels i:nth-child(2){background:#D4AF37!important}body.editorial .console-dots i:nth-child(3),body.editorial .window-pixels i:nth-child(3){background:#8FE3A5!important}
+body.editorial #interface .state-arrow,body.editorial #overview .loop-step:not(:last-child)::after,body.editorial #economy .flow-node:not(:last-child)::after{content:'►'!important;background:linear-gradient(90deg,#D4AF37,#FFEFCC,#D4AF37)!important;background-size:200% 100%!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important;animation:data-stream 1.8s linear infinite!important}
+body.editorial main #economy .suspicion-playground:is([data-risk=warning],[data-risk=caught]) :is(.risk-readout output,.peek-label output){color:#E00419!important}
+body.editorial main #interface .hierarchy-anchor .chip-token{color:#FFEFCC!important}.hierarchy-anchor .key-stamp{color:#FFEFCC!important}
+body.editorial main #economy .hierarchy-anchor .effect-badge{color:#FFEFCC!important;background:#E00419!important}
+body.editorial .editorial-manifesto :is(h2,p){color:#020202!important}body.editorial .editorial-footer h2{color:#FFF!important}
+@media(max-width:767px){.key-stamp{font-size:8px}.editorial .section-head h2{font-size:34px!important}body.editorial main :is(#overview,#table,#economy,#balance,#interface) .hierarchy-anchor{margin-top:8px}}
+.motion-off body.editorial main *,.motion-off body.editorial main *::after{animation:none!important;transition:none!important}
+.motion-off body.editorial main :is(#overview,#table,#economy,#balance,#interface) *,.motion-off body.editorial main :is(#overview,#table,#economy,#balance,#interface) *::after{animation:none!important}
+@media(prefers-reduced-motion:reduce){body.editorial main :is(#overview,#table,#economy,#balance,#interface) *,body.editorial main :is(#overview,#table,#economy,#balance,#interface) *::after{animation:none!important;transition:none!important}}

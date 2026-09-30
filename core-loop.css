@@ -1,0 +1,57 @@
+/* Core loop: readable paper, physical frames, and connected steps. */
+#overview .section-head h2{color:#FFF9ED;letter-spacing:-.025em}
+#overview .section-aside{color:#CBBEAC}
+#overview .premise-card{display:flex;flex-direction:column;background:#E5D5B5;color:#21150C;border:3px solid #6D472F;box-shadow:inset 0 0 18px #3D2B1F25,inset 0 2px 0 #FFF2D2,4px 4px 0 #090506}
+#overview .premise-card>.label{font-family:Pixel,monospace;font-size:11px;color:#8C2A1C;letter-spacing:.03em}
+#overview .premise-card h3{line-height:1.25;color:#21150C}
+#overview .premise-card p{color:#3A2A1D}
+#overview .premise-card dl{margin-top:auto;padding-top:22px}
+#overview .premise-card .data-row{border-color:#67482C30;align-items:center}
+#overview .premise-card dt{font-size:11px;color:#513D2B;letter-spacing:.025em}
+#overview .premise-card dd{font:16px Pixel,monospace;color:#21150C}
+#overview .loop-board{background:radial-gradient(ellipse at 50% 0,#6E2C2022,transparent 65%),#1C1012;border:2px solid #745139;box-shadow:inset 0 2px 0 #B48C5866,0 5px 0 #090506;display:flex;flex-direction:column}
+#overview .loop-board>.loop-heading{align-items:center;margin-bottom:24px}
+#overview .loop-heading>.label{font-family:Pixel,monospace;font-size:11px;letter-spacing:.04em;color:#E5C378}
+#overview .pixel-badge{display:inline-flex;align-items:center;gap:8px;background:#10090B;border:1px solid #D4AF37;color:#E5C378;box-shadow:2px 2px 0 #000;padding:7px 9px;font:10px Pixel,monospace;letter-spacing:0}
+#overview .pixel-badge::before{content:'';width:5px;height:5px;background:#E5C378;box-shadow:0 0 6px #D4AF3766}
+#overview .core-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin:auto 0}
+.loop-step{position:relative;min-width:0;display:flex}
+#overview .loop-card{position:relative;isolation:isolate;display:flex;flex-direction:column;width:100%;min-height:190px;padding:18px 14px;text-decoration:none;background:#3A0E0E;border:2px solid #B98A42;box-shadow:inset 0 2px 0 #E5C37855,inset 0 -4px 0 #190706,0 4px 0 #080405;transition:transform .22s ease,border-color .22s,box-shadow .22s,background .22s}
+#overview .loop-card::after{content:none}
+#overview .loop-card::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(110deg,transparent 40%,#E5C37833 50%,transparent 60%);background-size:300% 100%;background-position:100% 0;opacity:0}
+#overview .loop-card .step{display:block;font:11px/1.6 Pixel,monospace;color:#E5C378;margin-bottom:24px;letter-spacing:0;transform-origin:left center;transition:transform .2s,text-shadow .2s}
+#overview .loop-card b{font-size:17px;line-height:1.3;letter-spacing:-.02em;color:#FFF;margin-bottom:12px}
+#overview .loop-card small{display:block;font:13px/1.65 Arial,sans-serif;color:#E8DCCB}
+.loop-step:not(:last-child)::after{content:'▸';position:absolute;right:-19px;top:50%;margin-top:-12px;width:16px;text-align:center;pointer-events:none;font:22px/24px monospace;color:#E5C378;text-shadow:0 0 7px #D4AF3766;animation:sb-flow-pulse 1.8s ease-in-out infinite}
+.loop-step:nth-child(2)::after{animation-delay:.25s}.loop-step:nth-child(3)::after{animation-delay:.5s}
+#overview .loop-return{margin-top:24px;padding-top:18px;border-color:#A57A454D;gap:12px;font-size:11px;line-height:1.65}
+#overview .loop-return>span:first-child{color:#F3E9D2;font-weight:600}
+#overview .loop-return>span:last-child{color:#CBBEAC}
+#overview .loop-board>.small-note{color:#CBBEAC;line-height:1.65;font-size:12px;margin-top:14px}
+@media(hover:hover) and (pointer:fine){
+ #overview .loop-card:hover{transform:translateY(-4px);background:#481414;border-color:#F7D67C;box-shadow:inset 0 2px 0 #E5C37888,inset 0 -4px 0 #190706,0 8px 0 #080405,0 0 18px #D4AF3726}
+ #overview .loop-card:hover::before{animation:sb-loop-shine .65s ease-out both}
+ #overview .loop-card:hover .step{transform:scale(1.04);text-shadow:0 0 8px #D4AF3766}
+}
+#overview .loop-card:focus-visible{outline:3px solid #FF8C00;outline-offset:4px;border-color:#F7D67C}
+#overview .loop-card:focus-visible::before{animation:sb-loop-shine .65s ease-out both}
+#overview .loop-card:active{transform:translateY(2px)}
+@keyframes sb-loop-shine{0%{opacity:0;background-position:100% 0}15%{opacity:1}100%{opacity:0;background-position:0% 0}}
+@keyframes sb-flow-pulse{0%,100%{opacity:.5;translate:0 0}50%{opacity:1;translate:3px 0}}
+@media(min-width:768px) and (max-width:1199px){
+ #overview .core-flow{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+ .loop-step:nth-child(2)::after{content:none}
+ #overview .loop-card{min-height:170px}
+}
+@media(max-width:767px){
+ #overview .core-flow{grid-template-columns:1fr;gap:26px}
+ #overview .loop-card{min-height:0;padding:20px}
+ #overview .loop-card .step{margin-bottom:14px}
+ #overview .loop-card small{font-size:14px}
+ .loop-step:not(:last-child)::after{content:'▾';top:100%;right:calc(50% - 8px);margin-top:2px;animation-name:sb-flow-down}
+ #overview .loop-heading>.label{font-size:10px}
+ #overview .pixel-badge{font-size:8px;padding:7px}
+}
+@keyframes sb-flow-down{0%,100%{opacity:.5;translate:0 0}50%{opacity:1;translate:0 3px}}
+@media(prefers-reduced-motion:reduce){#overview .loop-card,#overview .loop-card::before,#overview .loop-card .step,.loop-step::after{animation:none!important;transition:none!important}#overview .loop-card:hover,#overview .loop-card:active,#overview .loop-card:hover .step{transform:none}}
+.motion-off #overview .loop-card:hover,.motion-off #overview .loop-card:active,.motion-off #overview .loop-card:hover .step{transform:none}

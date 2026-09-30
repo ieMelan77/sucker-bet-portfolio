@@ -1,0 +1,1 @@
+(()=>{const button=document.getElementById('iterations-toggle');if(!button)return;const body=document.getElementById('iterations-body');button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));body.inert=!open;button.closest('.iteration-log').classList.toggle('is-open',open);});})();

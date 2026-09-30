@@ -1,0 +1,23 @@
+body.editorial main #interface #state-billboard{padding:32px!important;overflow:visible}
+.logic-stamp{display:table;background:#E00419;color:#FFEFCC;border:2px solid #020202;box-shadow:3px 3px #020202;transform:rotate(-6deg);font:10px/1.6 Pixel,monospace;padding:7px 10px;margin:22px 0 18px}
+body.editorial main #interface #state-billboard h3{font:italic 400 clamp(32px,3.3vw,54px)/1.1 Georgia,serif!important;letter-spacing:-.04em;color:#FFEFCC!important;max-width:650px;margin:0 0 30px}
+.logic-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(180px,.8fr);gap:28px;align-items:center}.logic-paths{min-width:0}
+body.editorial main #interface #state-billboard .state-flow{gap:8px;margin:18px 0;flex-wrap:wrap}
+body.editorial main #interface #state-billboard .state-node{padding:10px;font-size:12px;line-height:1.45}
+body.editorial main #interface #state-billboard .logic-hub{background:#FFEFCC!important;color:#020202!important;transform:translateY(-4px);border:1px solid #D4AF37!important}
+.logic-asset{position:relative;min-width:0;padding:30px 0 55px;margin:0;isolation:isolate}
+.live-logic{display:block;text-align:right;color:#D4AF37;font:8px/1.7 Pixel,monospace;margin-bottom:24px}
+.logic-capture{transform:rotate(4deg);border:2px solid #D4AF37;background:#020202;filter:drop-shadow(8px 8px 0 #000);position:relative;z-index:2;transition:filter .25s}
+body.editorial main #interface #state-billboard .logic-capture .screen{margin:0;border:0!important;outline:0!important}.asset-caption{display:block;padding:10px;font:8px/1.7 Pixel,monospace;color:#FFEFCC}
+.asset-connector{position:absolute;left:-28px;top:48%;color:#D4AF37;font:20px monospace;z-index:3;pointer-events:none;text-shadow:0 0 8px #D4AF3766}
+.logic-card{position:absolute;width:54px;height:76px;object-fit:contain;right:6px;bottom:56px;transform:rotate(-12deg);image-rendering:pixelated;filter:drop-shadow(4px 4px 0 #000);z-index:3;pointer-events:none}
+.logic-asset figcaption{font:11px/1.6 Arial,sans-serif;color:#FFEFCC;max-width:85%;margin-top:24px}
+body.editorial main #interface #state-billboard .logic-outcomes{gap:15px;margin-top:30px;display:grid;grid-template-columns:1fr 1fr}
+body.editorial main #interface #state-billboard .state-stamp{font:9px/1.8 Pixel,monospace;padding:17px 12px;min-height:76px;border:2px solid #D4AF37!important;box-shadow:3px 3px #020202!important;display:flex;align-items:center}
+body.editorial main #interface #state-billboard .stamp-fail{background:#E00419!important;color:#FFEFCC!important;transform:rotate(-3deg)}
+body.editorial main #interface #state-billboard .stamp-clear{background:#FFEFCC!important;color:#020202!important;transform:rotate(3deg)}
+body.editorial main #interface #state-billboard .path-lit{border-color:#D4AF37!important;box-shadow:0 0 13px #D4AF3744!important}.logic-asset.asset-lit .logic-capture{filter:drop-shadow(8px 8px 0 #000) drop-shadow(0 0 6px #D4AF3766)}
+body.editorial main #interface #state-billboard .state-arrow.path-lit{filter:drop-shadow(0 0 5px #D4AF37);animation-duration:.7s!important}
+@media(min-width:768px){body.editorial main #interface .playground-panel{grid-column:span 4/span 4}body.editorial main #interface #state-billboard{grid-column:span 8/span 8}}
+@media(min-width:768px) and (max-width:1150px){.logic-layout{grid-template-columns:1fr}.logic-asset{max-width:340px;width:80%;justify-self:end;padding-bottom:30px}.logic-asset .logic-card{bottom:28px}}
+@media(max-width:767px){body.editorial main #interface #state-billboard{padding:22px!important}.logic-layout{grid-template-columns:1fr;gap:18px}.logic-asset{width:86%;justify-self:center;padding-top:4px;padding-bottom:24px}.asset-connector{top:44%;left:-25px}.logic-card{bottom:30px}body.editorial main #interface #state-billboard .logic-outcomes{grid-template-columns:1fr}body.editorial main #interface #state-billboard .state-stamp{min-height:62px}.live-logic{text-align:center}}

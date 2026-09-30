@@ -1,0 +1,35 @@
+#balance .rng-panel,#balance .ledger-panel{padding:24px;background:#191013;border:2px solid #A98C55;min-width:0}
+#rng-terminal{scroll-margin-top:90px}
+#balance .rng-panel p,#balance .ledger-panel p,#balance .diagnostic-panel p{color:#E5DBC5;font-size:14px;line-height:1.75}
+#balance .rng-panel h3,#balance .ledger-panel h3{font-size:24px;line-height:1.35}
+.dev-ide{margin-top:22px;background:#0F1018;border:1px solid #847759;box-shadow:4px 4px #080404;overflow:hidden}
+.ide-titlebar{display:flex;align-items:center;gap:13px;padding:13px 14px;background:#24202A;border-bottom:1px solid #635747;color:#F3E9D2;font:12px/1.5 Consolas,monospace}
+.window-pixels{display:flex;gap:5px}.window-pixels i{width:8px;height:8px;background:#FF6666;box-shadow:0 2px #0006}.window-pixels i:nth-child(2){background:#F1D26A}.window-pixels i:nth-child(3){background:#70CC93}
+.ide-language{margin-left:auto;color:#B9AC99;font-size:10px}
+#balance .dev-ide pre{margin:0;padding:20px 16px;overflow-x:auto;border:0;background:transparent;color:#F3E9D2;font:13px/1.95 Consolas,monospace;tab-size:4}
+.cs-keyword{color:#FF79C6}.cs-var{color:#8BE9FD}.cs-fn,.cs-number{color:#F1FA8C}.cs-comment{color:#6272A4}
+.ide-cursor{color:#50FA7B;animation:ide-blink 1.2s steps(1,end) infinite}
+@keyframes ide-blink{50%{opacity:0}}
+.ide-status{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:10px 14px;border-top:1px solid #39333E;color:#A9B3CB;font:9px/1.5 Consolas,monospace}
+#balance .ledger-panel .table-wrap{margin-top:22px;background:#13241A;border:2px solid #D4AF37;box-shadow:inset 0 2px #FFE8A522,3px 4px #080404}
+#balance .ledger-panel table{width:100%;table-layout:fixed}
+#balance .ledger-panel th{color:#B8C6B9;font-size:11px;background:#0C1911;padding:14px 10px}
+#balance .ledger-panel td{padding:17px 10px;vertical-align:top;white-space:normal;overflow-wrap:anywhere;border-color:#D4AF3733;line-height:1.7}
+#balance .ledger-panel td:first-child{color:#E5C378;font:10px/1.8 Pixel,monospace;width:24%}
+#balance .ledger-panel td:nth-child(2){color:#FFF;font:700 13px/1.7 Consolas,monospace}
+#balance .ledger-panel td:last-child{color:#E5DBC5;font:12px/1.7 Arial,sans-serif}
+#balance .ledger-panel tr:hover td{background:#223B28}
+#balance .diagnostic-panel{padding:24px;background:#120B0D;border:2px solid #A98C55}
+.diagnostic-grid{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:18px}
+.diagnostic-metric{padding:22px;background:linear-gradient(135deg,#14221B,#101811);border:1px solid #697E50;box-shadow:inset 0 3px #50FA7B33}
+#balance .diagnostic-number{display:flex;align-items:center;gap:10px;white-space:nowrap;font:clamp(28px,3.1vw,48px)/1.4 Pixel,monospace;color:#A4FFC0;text-shadow:0 0 10px #50FA7B66;margin:27px 0 20px;letter-spacing:-1px}
+.metric-arrow{font-family:Arial,sans-serif;font-size:.8em;color:#86AB8E}.gain-arrow{font-size:15px;color:#50FA7B;margin-left:auto;text-shadow:0 0 10px #50FA7B99}
+.diagnostic-question{position:relative;padding:22px;background:#280C0C;border:1px solid #C16950;box-shadow:inset 4px 0 #D3674C}
+#balance .diagnostic-question .label{color:#FFAE87}
+#balance .diagnostic-question h3{font-size:23px;line-height:1.35;margin:22px 0 16px;color:#FFF}
+.iteration-log{margin-top:20px}.iteration-log .iteration-mini{margin:0 16px;padding:14px 0;border-bottom:1px solid #D4AF3729;align-items:center}.iteration-log .iteration-mini:last-child{border:0}.iteration-log .iteration-mini b{color:#FFD700;font:12px Pixel,monospace}.iteration-log .iteration-mini p{padding:0;margin:0}
+.iteration-log button:active{transform:translateY(2px)}
+@media(max-width:1100px){.diagnostic-grid{grid-template-columns:1fr 1fr}.diagnostic-question{grid-column:1/-1}}
+@media(max-width:767px){#balance .rng-panel,#balance .ledger-panel,#balance .diagnostic-panel{padding:16px}.diagnostic-grid{grid-template-columns:1fr}.diagnostic-number{font-size:36px!important}.ide-language{display:none}#balance .dev-ide pre{font-size:11px;padding:16px 10px}#balance .ledger-panel td{padding:12px 7px}#balance .ledger-panel td:first-child{font-size:9px}#balance .ledger-panel td:nth-child(2){font-size:12px}.diagnostic-metric,.diagnostic-question{padding:18px}}
+@media(prefers-reduced-motion:reduce){.ide-cursor{animation:none}}
+.motion-off .ide-cursor{animation:none}
