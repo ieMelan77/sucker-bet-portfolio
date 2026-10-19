@@ -1,0 +1,11 @@
+{
+  "version": "2026.10.19",
+  "files": {
+    "credits.txt": "fb52f07b7b00318e1cb777de217ec2004f6696a27c6e2ec5954b22efa791dec4",
+    "index.html": "337ad40b002f2db45f8c0ada23fb1f6ab19440f2c5ece4d499f92b40fdeeabf3",
+    "Build/1a60eb688f3027a6952ed359db9be8fb.wasm": "6174d577680f7b23906ff04fb3a909d1fb520e58788aeada06a5ed6226cc3830",
+    "Build/ae4f0de4365df0735e77a8729ac0513d.data": "bfe8f40706ebbcf481af9abaed9438242751d2a56b28d0f98d3bec32fd2182f2",
+    "Build/b21a8c0b3d3c70980aa336136c1482f6.framework.js": "9af8c4b42989b5a0375f3a04d1d7ee6c68b440b985e813fe0895b451961c0dec",
+    "Build/f3680f3ace3e156b09d7c0e3f0dec927.loader.js": "00abb65df85073ec02beb8e7dc45e7257febd08bae352495cb49a6f8f75f48c2"
+  }
+}

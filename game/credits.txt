@@ -1,0 +1,74 @@
+DOTOWN artwork used in the SUCKER BET demo ending
+Copyright: Maeda Design Room. Downloaded 2026-10-19.
+
+PartyPopper.png: クラッカー
+Page: https://dotown.maeda-design-room.net/1606/
+File: https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/event_cracker_01.png
+
+Clown.png: ピエロさん
+Page: https://dotown.maeda-design-room.net/2555/
+File: https://dotown.maeda-design-room.net/wp-content/uploads/2022/02/person_pierrot_01.png
+
+Terms: https://dotown.maeda-design-room.net/term-of-use/
+The official terms allow commercial/noncommercial game use and modifications.
+Copyright remains with Maeda Design Room; do not redistribute these as a standalone asset pack.
+Downloaded PNGs are unmodified. Rendering uses point filtering; the right popper is mirrored in UI.
+
+
+SUCKER BET - Audio credits
+
+Sound effects: Casino Audio, Interface Sounds, Music Jingles by Kenney.
+License: Creative Commons Zero (CC0). Original license files are preserved
+in Assets/Resources/Audio.
+https://kenney.nl/assets/casino-audio
+https://kenney.nl/assets/interface-sounds
+https://kenney.nl/assets/music-jingles
+
+Music: [Loop]_Jazz_Intro, [Loop]_Jazz_chill, [Loop]_Calm_Menu by Draelent.
+From Music_Pack_01: https://draelent.itch.io/free-music-pack-01
+License: CC-BY, as stated on the author's download page (no version specified).
+Original audio files unmodified; playback volume/fades applied in game.
+Attribution is also shown in the in-game audio settings screen.
+
+ACTIVE CIRCUS AUDIO REVISION - 2026-10-19
+Music: Rolling Circus by cinameng / James Gargette. CC0.
+https://opengameart.org/content/rolling-circus
+Downloaded from https://opengameart.org/sites/default/files/rollingcircus.wav
+Imported as CircusTable.wav; stage-one tense layer at original playback speed.
+Music: Carnival Rides by Ecrivain. CC0.
+https://opengameart.org/content/carnival-rides
+Downloaded from https://opengameart.org/sites/default/files/carnivalrides.ogg
+Imported as CircusHome.ogg; prologue playback at .88 pitch/speed.
+Additional SFX: Digital Audio by Kenney. CC0.
+https://kenney.nl/assets/digital-audio
+Additional Casino Audio clips by Kenney. CC0.
+https://kenney.nl/assets/casino-audio
+Source pack licenses preserved alongside imported clips.
+CC0 terms: https://creativecommons.org/publicdomain/zero/1.0/
+Original authored oscillator loops CircusPulse.wav and ReelLoop.wav:
+created for this project, no third-party samples. Dedicated to CC0.
+Generation script: Logs/connect_audio.py (final waveform functions).
+Prior Draelent tracks retained as legacy assets; no longer selected by game.
+Rolling Circus was peak-normalized to -2.5 dBFS and converted to 16-bit PCM.
+Original preserved at Logs/AudioSources/rollingcircus-original.wav.
+Other source recordings are unchanged; Unity compression,
+playback gain, music fades, ducking and pitch adjustments apply at runtime.
+
+MENU / CELEBRATION POLISH
+CasinoCrowd.ogg: Crowd Shouting/Speaking Ambience by StarNinjas, CC0.
+https://opengameart.org/content/crowd-shoutingspeaking-ambience
+https://opengameart.org/users/starninjas
+Playback slowed and low-pass filtered for distant casino background.
+CelebrationCrowd.ogg: Well Done by qubodup, CC0 since 2024-10-05.
+https://opengameart.org/content/well-done
+The original download filename says CCBY3; the author explicitly relicensed it to CC0.
+CircusVictory.wav: original synthesized snare, bass drum, gong/cymbal and brass cadence.
+No third-party samples; dedicated to CC0. Generation: Logs/build_victory_audio.py.
+
+CASINO IDENTITIES AND UNDERWATER VOICES
+BubbleBoss0/1/2.wav, BubblePlayer0/1/2.wav: original synthesized underwater character syllables.
+HarborLight.wav / HarborTense.wav: original harbor carousel / pursuit arrangements.
+RedHallLight.wav / RedHallTense.wav: original red-hall carnival / rush arrangements.
+No game audio was sampled. These original assets are dedicated to CC0.
+Reproducible synthesis source: Logs/build_casino_identity_audio.py.
+Stage one uses the previously credited Carnival Rides and Rolling Circus tracks.
